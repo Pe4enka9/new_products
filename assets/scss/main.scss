@@ -1,0 +1,110 @@
+@import "variables";
+
+.container {
+  width: 90%;
+  margin: 20px auto;
+
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  form {
+    margin-bottom: 20px;
+
+    select {
+      margin-right: 10px;
+      padding: 5px;
+
+      border: 2px solid $border;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+
+      font-size: 16px;
+
+      outline: none;
+    }
+
+    input {
+      padding: 5px 10px;
+
+      color: #fff;
+      background-color: $bgButton;
+
+      border: none;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+
+      font-size: 16px;
+
+      text-decoration: none;
+      transition: background-color .3s;
+
+      cursor: pointer;
+
+      &:hover {
+        background-color: $bgButtonHover;
+      }
+    }
+  }
+
+  .catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+
+    .card {
+      height: 400px;
+
+      padding: 20px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      border: 2px solid $border;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      border-radius: 50px;
+
+      h2 {
+        font-size: 20px;
+      }
+
+      a {
+        padding: 5px 10px;
+
+        color: #fff;
+        background-color: $bgButton;
+
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+
+        text-decoration: none;
+        transition: background-color .3s;
+
+        &:hover {
+          background-color: $bgButtonHover;
+        }
+      }
+
+      .image-container {
+        width: 100%;
+        height: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        overflow: hidden;
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
